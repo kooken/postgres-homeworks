@@ -1,20 +1,20 @@
-# Базовые SQL запросы. Домашнее задание
+# Basic SQL queries. Homework
 
-### Создание и наполнение БД
+### Creating and filling a database
 
-- Создайте новую БД `northwind`
-- Откройте в pgAdmin _querytool_ и выполните там код из файл `northwind_script.sql`
+- Create a new `northwind` database
+- Open _querytool_ in pgAdmin and execute the code from the `northwind_script.sql` file there
 
-### Написание sql-запросов
+### Writing SQL queries
 
-- Напишите sql-запросы на простые выборки в файле `simple_queries.sql`
-- Напишите sql-запросы на фильтрацию и сортировки в `filter_sorting.sql`
-- Напишите sql-запросы на фильтрацию по шаблону и группировки в `groupby.sql`
-
-> **Note**
-> <br>
-> Писать и проверять запросы можно в pgAdmin, а далее код перенести в .sql-файлы.
+- Write SQL queries for simple selections in the `simple_queries.sql` file
+- Write SQL queries for filtering and sorting in `filter_sorting.sql`
+- Write SQL queries for filtering by pattern and grouping in `groupby.sql`
 
 > **Note**
 > <br>
-> В папке screenshots лежат скриншоты результатов, которые должны получиться по каждому sql-запросу.
+> You can write and test queries in pgAdmin, and then transfer the code to .sql files.
+
+> **Note**
+> <br>
+> The screenshots folder contains screenshots of the results that should be obtained for each SQL query.

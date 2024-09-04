@@ -1,17 +1,17 @@
-# Лучшие практики по БД. Домашнее задание
+# Database best practices. Homework
 
-## Описание задачи
+## Task description
 
-Напишите программу, в результате выполнения которой будет:
-- создана новая БД с данными из файла `fill_db.sql`
-- в БД будет добавлена таблица `suppliers` с данными из файла `suppliers.json`
-- в таблицу с товарами будет добавлена связь с таблицей `suppliers`
+Write a program that will:
+- create a new database with data from the file `fill_db.sql`
+- add a table `suppliers` to the database with data from the file `suppliers.json`
+- add a link to the table `suppliers` to the table with products
 
-> Можно воспользоваться структурой в файле `main.py` или реализовать все самостоятельно.
+> You can use the structure in the file `main.py` or implement everything yourself.
 
-Создайте `database.ini` конфигурационный файл с вашими параметрами подключения к БД.
+Create a `database.ini` configuration file with your database connection parameters.
 </br>
-Пример содержания файла:
+Example file contents:
 ```ini
 [postgresql]
 host=localhost

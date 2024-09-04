@@ -1,5 +1,3 @@
-import json
-
 import psycopg2
 
 from config import config
@@ -14,26 +12,26 @@ def main():
     conn = None
 
     create_database(params, db_name)
-    print(f"БД {db_name} успешно создана")
+    print(f"Database {db_name} successfully created")
 
     params.update({'dbname': db_name})
     try:
         with psycopg2.connect(**params) as conn:
             with conn.cursor() as cur:
                 execute_sql_script(cur, script_file)
-                print(f"БД {db_name} успешно заполнена")
+                print(f"Database {db_name} successfully filled with data")
 
                 create_suppliers_table(cur)
-                print("Таблица suppliers успешно создана")
+                print("Table suppliers successfully created")
 
                 suppliers = get_suppliers_data(json_file)
                 insert_suppliers_data(cur, suppliers)
-                print("Данные в suppliers успешно добавлены")
+                print("Data successfully added to suppliers")
 
                 add_foreign_keys(cur, json_file)
-                print(f"FOREIGN KEY успешно добавлены")
+                print(f"FOREIGN KEY successfully added")
 
-    except(Exception, psycopg2.DatabaseError) as error:
+    except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         if conn is not None:
@@ -41,31 +39,32 @@ def main():
 
 
 def create_database(params, db_name) -> None:
-    """Создает новую базу данных."""
+    """New database creation"""
     pass
 
-def execute_sql_script(cur, script_file) -> None:
-    """Выполняет скрипт из файла для заполнения БД данными."""
 
+def execute_sql_script(cur, script_file) -> None:
+    """Executes a script from a file to populate the database with data."""
+    pass
 
 
 def create_suppliers_table(cur) -> None:
-    """Создает таблицу suppliers."""
+    """Creates the suppliers table."""
     pass
 
 
 def get_suppliers_data(json_file: str) -> list[dict]:
-    """Извлекает данные о поставщиках из JSON-файла и возвращает список словарей с соответствующей информацией."""
+    """Extracts supplier data from a JSON file and returns a list of dictionaries with the relevant information."""
     pass
 
 
 def insert_suppliers_data(cur, suppliers: list[dict]) -> None:
-    """Добавляет данные из suppliers в таблицу suppliers."""
+    """Adds data from suppliers to the suppliers table."""
     pass
 
 
 def add_foreign_keys(cur, json_file) -> None:
-    """Добавляет foreign key со ссылкой на supplier_id в таблицу products."""
+    """Adds a foreign key with a reference to supplier_id to the products table."""
     pass
 
 

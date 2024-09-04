@@ -1,20 +1,20 @@
--- Напишите запросы, которые выводят следующую информацию:
--- 1. заказы, доставленные в страны France, Germany, Spain (таблица orders, колонка ship_country)
+-- Write queries that output the following information:
+-- 1. orders delivered to the countries France, Germany, Spain (table orders, column ship_country)
 SELECT * FROM orders
-WHERE ship_country IN ('France', 'Germany', 'Spain')
+WHERE ship_country IN ('France', 'Germany', 'Spain');
 
--- 2. уникальные страны и города, куда отправлялись заказы, отсортировать по странам и городам (таблица orders, колонки ship_country, ship_city)
+-- 2. unique countries and cities where orders were shipped, sorted by countries and cities (table orders, columns ship_country, ship_city)
 SELECT DISTINCT ship_country, ship_city FROM orders
-ORDER BY ship_country, ship_city
+ORDER BY ship_country, ship_city;
 
--- 3. сколько дней в среднем уходит на доставку товара в Германию (таблица orders, колонки order_date, shipped_date, ship_country)
-SELECT AVG(shipped_date-order_date) FROM orders
-WHERE ship_country IN ('Germany')
+-- 3. the average number of days it takes to deliver a product to Germany (table orders, columns order_date, shipped_date, ship_country)
+SELECT AVG(shipped_date - order_date) FROM orders
+WHERE ship_country IN ('Germany');
 
--- 4. минимальную и максимальную цену среди продуктов, не снятых с продажи (таблица products, колонки unit_price, discontinued не равно 1)
+-- 4. the minimum and maximum price among products that are not discontinued (table products, columns unit_price, discontinued not equal to 1)
 SELECT MAX(unit_price), MIN(unit_price) FROM products
-WHERE discontinued <>1
+WHERE discontinued <> 1;
 
--- 5. минимальную и максимальную цену среди продуктов, не снятых с продажи и которых имеется не меньше 20 (таблица products, колонки unit_price, units_in_stock, discontinued не равно 1)
+-- 5. the minimum and maximum price among products that are not discontinued and have at least 20 units in stock (table products, columns unit_price, units_in_stock, discontinued not equal to 1)
 SELECT MAX(unit_price), MIN(unit_price) FROM products
-WHERE discontinued <>1 AND units_in_stock>=20
+WHERE discontinued <> 1 AND units_in_stock >= 20;

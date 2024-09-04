@@ -1,15 +1,15 @@
--- Напишите запросы, которые выводят следующую информацию:
--- 1. "имя контакта" и "город" (contact_name, city) из таблицы customers (только эти две колонки)
-SELECT contact_name, city FROM customers
+-- Write queries that output the following information:
+-- 1. "contact name" and "city" (contact_name, city) from the customers table (only these two columns)
+SELECT contact_name, city FROM customers;
 
--- 2. идентификатор заказа и разницу между датами формирования (order_date) заказа и его отгрузкой (shipped_date) из таблицы orders
-SELECT order_id, shipped_date-order_date FROM orders
+-- 2. order ID and the difference between the order date (order_date) and its shipment date (shipped_date) from the orders table
+SELECT order_id, shipped_date - order_date FROM orders;
 
--- 3. все города без повторов, в которых зарегистрированы заказчики (customers)
-SELECT DISTINCT city FROM CUSTOMERS
+-- 3. all unique cities where customers are registered (customers table)
+SELECT DISTINCT city FROM customers;
 
--- 4. количество заказов (таблица orders)
-SELECT COUNT(order_id) FROM orders
+-- 4. the number of orders (orders table)
+SELECT COUNT(order_id) FROM orders;
 
--- 5. количество стран, в которые отгружался товар (таблица orders, колонка ship_country)
-SELECT DISTINCT COUNT(ship_country) FROM orders
+-- 5. the number of unique countries to which goods were shipped (orders table, ship_country column)
+SELECT COUNT(DISTINCT ship_country) FROM orders;

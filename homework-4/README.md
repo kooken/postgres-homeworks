@@ -1,8 +1,8 @@
-# Data Definition Language. Домашнее задание
+# Data Definition Language. Homework
 
-## Написание sql-запросов
+## Writing SQL queries
 
-- Напишите sql-запросы в файле `alter_student.sql`
-- Напишите sql-запросы в файле  `alter_northwind.sql`
+- Write SQL queries in the file `alter_student.sql`
+- Write SQL queries in the file `alter_northwind.sql`
 
-> Писать и проверять запросы можно в pgAdmin, а далее код перенести в .sql-файлы.
+> You can write and test queries in pgAdmin, and then transfer the code to .sql files.

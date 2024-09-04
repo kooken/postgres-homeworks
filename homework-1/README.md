@@ -1,26 +1,26 @@
-# Введение в БД. Домашнее задание
+# Introduction to DB. Homework
 
-### Установка Postgres
+### Installing Postgres
 
-- [Скачать](https://www.postgresql.org/download/) и установить локально Postgres
+- [Download](https://www.postgresql.org/download/) and installing Postgres locally
 
-### Создание БД
+### Creating a DB
 
-- Подключиться к Postgres из командной строки
-- Создать БД с названием `north`
+- Connect to Postgres from the command line
+- Create a DB named `north`
 
-### Создание таблиц
+### Creating tables
 
-- Ознакомиться с данными в папке `north_data`
-- Создать три таблицы, используя `query tool` в pgAdmin
-    - `employees`
-    - `customers`
-    - `orders`
-- Колонки для таблиц и связи между таблицами определить самостоятельно
-- Sql-код для создания таблиц скопировать в файл `create_tables.sql`
+- Review the data in the `north_data` folder
+- Create three tables using the `query tool` in pgAdmin
+- `employees`
+- `customers`
+- `orders`
+- Define the columns for the tables and the relationships between the tables yourself
+- Copy the Sql code for creating the tables to the `create_tables.sql` file
 
-### Заполнение таблиц данными
+### Filling the tables with data
 
-- Написать скрипт в `main.py`, который заполнит созданные таблицы данными из `north_data`
-- Для подключения к БД использовать библиотеку `psycopg2`
-- Зайти в pgAdmin и убедиться, что данные в таблицах есть
+- Write a script in `main.py` that will fill the created tables with data from `north_data`
+- Use the `psycopg2` library to connect to the DB
+- Log in to pgAdmin and make sure that there is data in the tables

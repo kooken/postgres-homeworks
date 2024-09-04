@@ -1,35 +1,35 @@
--- 1. Создать таблицу student с полями student_id serial, first_name varchar, last_name varchar, birthday date, phone varchar
+-- 1. Create a table named student with the following fields: student_id serial, first_name varchar, last_name varchar, birthday date, phone varchar
 CREATE TABLE student
 (
-	student_id serial,
-	first_name varchar,
-	last_name varchar,
-	birthday date,
-	phone varchar
-)
+    student_id serial,
+    first_name varchar,
+    last_name varchar,
+    birthday date,
+    phone varchar
+);
 
--- 2. Добавить в таблицу student колонку middle_name varchar
+-- 2. Add a column middle_name of type varchar to the student table
 ALTER TABLE student
-ADD COLUMN middle_name varchar
+ADD COLUMN middle_name varchar;
 
--- 3. Удалить колонку middle_name
+-- 3. Remove the middle_name column
 ALTER TABLE student
-DROP COLUMN middle_name
+DROP COLUMN middle_name;
 
--- 4. Переименовать колонку birthday в birth_date
+-- 4. Rename the column birthday to birth_date
 ALTER TABLE student
-RENAME birthday TO birthday_date
+RENAME birthday TO birth_date;
 
--- 5. Изменить тип данных колонки phone на varchar(32)
+-- 5. Change the data type of the phone column to varchar(32)
 ALTER TABLE student
-ALTER COLUMN phone SET DATA TYPE varchar(32)
+ALTER COLUMN phone SET DATA TYPE varchar(32);
 
--- 6. Вставить три любых записи с автогенерацией идентификатора
-INSERT INTO student (first_name, last_name, birthday_date, phone)
-VALUES ('Ivan', 'Ivanov', '2001-10-11', '592345'),
-       ('Mikhail', 'Sidorov', '1998-04-25', '645478'),
-       ('Sergey', 'Antonov', '2005-05-31', '789210')
+-- 6. Insert any three records with auto-generated identifiers
+INSERT INTO student (first_name, last_name, birth_date, phone)
+VALUES ('Jackson', 'Teller', '2001-10-11', '592345'),
+       ('Matthew', 'Bellamy', '1998-04-25', '645478'),
+       ('James', 'Hetfield', '2005-05-31', '789210');
 
--- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
+-- 7. Delete all data from the table and reset the identifiers to their initial state
 TRUNCATE TABLE student
-RESTART IDENTITY
+RESTART IDENTITY;

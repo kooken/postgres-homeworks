@@ -1,32 +1,31 @@
-## Домашние задания по базе данных PostgreSQL
+## PostgreSQL Database Homework
 
-Добро пожаловать в наш репозиторий с домашними заданиями по базе данных PostgreSQL. 
-Здесь вы найдете пять заданий, которые помогут вам улучшить ваши навыки работы с PostgreSQL. 
-В домашних заданиях вы установите БД Postgres, будете подключаться к ней, создавать таблицы, вносить данные, 
-писать запросы от самых простых до сложных. Вы также научитесь использовать библиотеку psycopg2 для работы с PostgreSQL.
+Welcome to our PostgreSQL database homework repository.
+Here you will find five tasks that will help you improve your PostgreSQL skills.
+In the homeworks, you will install the Postgres database, connect to it, create tables, enter data,
+write queries from the simplest to the most complex. You will also learn how to use the psycopg2 library to work with PostgreSQL.
 
-Каждое домашнее задание находится в своей директории с названием _homework-N_, где _N_ - номер домашнего задания. 
+Each homework is located in its own directory called _homework-N_, where _N_ is the homework number.
 
+### How to submit homework
 
-### Как сдавать домашние задания
+#### Must be completed once:
 
-#### Необходимо выполнить один раз:
+1. __Fork__ this repository. The repository will appear in your personal repositories on GitHub.
+2. `git clone` the forked repository to get the repository locally.
 
-1. Сделайте __Fork__ этого репозитория. Репозиторий появится в ваших личных репозиториях на GitHub.
-2. Сделайте `git clone` форкнутого репозитория, чтобы получить репозиторий локально.
+#### For each homework assignment:
 
-#### Для каждой домашней работы:
+1. Complete the homework locally on your computer.
+2. Run `git push`. The homework solution will appear in your GitHub repository.
+3. Send the repository link to the reviewer.
 
-1. Выполните домашнее задание локально на компьютере.
-2. Выполните `git push`. Решение ДЗ появится в вашем репозитории на GitHub.
-3. Отправьте ссылку на репозиторий проверяющему.
+#### How to Fork a Repository on GitHub
 
-#### Как сделать Fork репозитория на GitHub
+1. Open the repository you want to fork.
+2. Click the "Fork" button in the upper right corner of the page.
+3. Select your profile or organization as the location where you want to fork the repository.
+4. Wait for GitHub to complete the forking process.
+5. You can now clone your forked repository to your computer to start working with it.
 
-1. Откройте репозиторий, который вы хотите форкнуть.
-2. Нажмите на кнопку "Fork" в правом верхнем углу страницы.
-3. Выберите свой профиль или организацию в качестве места, куда вы хотите форкнуть репозиторий.
-4. Дождитесь, пока GitHub завершит процесс форкинга.
-5. Теперь вы можете клонировать свой форкнутый репозиторий на свой компьютер, чтобы начать работать с ним.
-
-Успехов в изучении базы данных PostgreSQL!
+Happy learning PostgreSQL!

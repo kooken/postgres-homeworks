@@ -1,4 +1,4 @@
-"""Скрипт для заполнения данными таблиц в БД Postgres."""
+"""Script for filling the Postgres database"""
 import psycopg2
 import csv
 

@@ -1,20 +1,19 @@
-# Продвинутый синтаксис. Домашнее задание
+# Advanced Syntax. Homework
 
-### Написание sql-запросов
+### Writing SQL Queries
 
-- Напишите sql-запросы на JOIN и подзапросы в файле `queries.sql`
-
-
-> **Note**
-> <br>
-> Писать и проверять запросы можно в pgAdmin, а далее код перенести в .sql-файлы.
-
-### Может пригодиться
-> Используйте в выборке `CONCAT(first_name, ' ', last_name)`, чтобы объединить имя и фамилию сотрудника.
-
-> Ключевое слово `AS` в SQL используется для переименования столбцов или таблиц в результате запроса. 
-> Например, запрос `SELECT first_name AS имя, last_name AS фамилия FROM employees` вернет таблицу с переименованными столбцами "имя" и "фамилия".
+- Write SQL queries for JOIN and subqueries in `queries.sql` file
 
 > **Note**
 > <br>
-> В папке screenshots лежат скриншоты результатов, которые должны получиться по каждому sql-запросу.
+> You can write and test queries in pgAdmin, and then transfer the code to .sql files.
+
+### May be useful
+> Use `CONCAT(first_name, ' ', last_name)` in the selection to combine the first and last names of an employee.
+
+> The `AS` keyword in SQL is used to rename columns or tables in the query result.
+> For example, the query `SELECT first_name AS first_name, last_name AS last_name FROM employees` will return a table with the renamed columns "first_name" and "last_name".
+
+> **Note**
+> <br>
+> The screenshots folder contains screenshots of the results that should be obtained for each SQL query.
